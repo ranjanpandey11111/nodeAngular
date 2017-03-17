@@ -5,7 +5,7 @@ import {ExperimentsComponent} from './experiments/experiments.component';
 import {HomeComponent} from './home/home.component';
 import {StateService} from './common/state.service';
 import {ExperimentsService} from './common/experiments.service';
-
+import {ProductsComponent} from './products/products.component';
 @Component({
   selector: 'app',
   template: require('./app.component.html'),
@@ -18,6 +18,7 @@ import {ExperimentsService} from './common/experiments.service';
   {path: '/home',        component: HomeComponent },
   {path: '/about',       component: AboutComponent },
   {path: '/experiments', component: ExperimentsComponent },
+  {path:  '/products',   component: ProductsComponent},
   {path: '/*',           component: HomeComponent }
 ])
 export class AppComponent {}
