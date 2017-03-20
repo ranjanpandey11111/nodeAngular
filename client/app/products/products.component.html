@@ -1,9 +1,14 @@
-<h1>{{ title }}</h1>
-<p>{{ body }}</p>
-
-<hr>
+<h1>
+  {{ title }}
+</h1>
+<p>
+  {{ body }}
+</p>
+<hr/>
+<experiment *ngFor="let product of products" [product]="product"></experiment>
+<hr/>
 <div>
-  <h2 class="text-error">parcel: {{ message }}</h2>
+  <h2 class="text-error">Experiments: {{message}}</h2>
   <form class="form-inline">
     <input type="text" [(ngModel)]="message" placeholder="Message">
     <button type="submit" class="btn" (click)="updateMessage(message)">Update Message</button>

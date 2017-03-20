@@ -1,11 +1,10 @@
 import {Component} from '@angular/core';
 import {Routes, ROUTER_DIRECTIVES} from '@angular/router';
 import {AboutComponent} from './about/about.component';
-import {ExperimentsComponent} from './experiments/experiments.component';
+import {ProductsComponent} from './products/products.component';
 import {HomeComponent} from './home/home.component';
 import {StateService} from './common/state.service';
 import {ExperimentsService} from './common/experiments.service';
-import {ProductsComponent} from './products/products.component';
 @Component({
   selector: 'app',
   template: require('./app.component.html'),
@@ -17,8 +16,7 @@ import {ProductsComponent} from './products/products.component';
   {path: '/',            component: HomeComponent },
   {path: '/home',        component: HomeComponent },
   {path: '/about',       component: AboutComponent },
-  {path: '/experiments', component: ExperimentsComponent },
-  {path:  '/products',   component: ProductsComponent},
+  {path: '/products', component: ProductsComponent },
   {path: '/*',           component: HomeComponent }
 ])
 export class AppComponent {}

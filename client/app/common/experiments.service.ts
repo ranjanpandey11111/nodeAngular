@@ -1,16 +1,16 @@
 import {Injectable} from '@angular/core';
-import {Experiment} from './experiment.model';
+import {Products} from './experiment.model';
 
 @Injectable()
 export class ExperimentsService {
-  private experiments: Experiment[] = [
-    {name: 'Experiment 1', description: 'This is an experiment', completed:0},
-    {name: 'Experiment 2', description: 'This is an experiment', completed:0},
-    {name: 'Experiment 3', description: 'This is an experiment', completed:0},
-    {name: 'Experiment 4', description: 'This is an experiment', completed:0}
+  private experiments: Products[] = [
+    {name: 'Shirt', description: 'Nice Shirt dude', price:5643,brand:"Raymonds"},
+    {name: 'Jeans', description: 'Enjoy Jeans All time', price:4430,brand:"Reebook"},
+    {name: 'shoes', description: 'A great soues u like most', price:494,brand:"Sparks"},
+    {name: 'Micromax-UNIT2', description: 'Hiegh Performance phone', price:4533,brand:"Micromax"}
   ];
 
-  getExperiments(): Experiment[] {
+  getExperiments(): Products[] {
     return this.experiments;
   };
 }

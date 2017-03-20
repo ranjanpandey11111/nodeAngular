@@ -1,5 +1,6 @@
-export interface Experiment {
+export interface Products {
   name: string;
   description: string;
-  completed: number;
+  price: number;
+  brand:string;
 }

@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {Experiment} from '../../common/experiment.model';
+import {Products} from '../../common/experiment.model';
 
 @Component({
   selector: 'experiment',
@@ -15,9 +15,9 @@ import {Experiment} from '../../common/experiment.model';
 })
 
 export class ExperimentDetailComponent {
-  @Input() experiment: Experiment;
+  @Input() product: Products;
 
   doExperiment(): void {
-    this.experiment.completed += 1;
+    this.product.price += 1;
   };
 }
